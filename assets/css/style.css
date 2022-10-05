@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #4C0033;
+    padding: 4%;
+}
+
+#heading-para {
+    text-align: center;
+    color: #AF0171;
+    font-size: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.start-button {
+        background-color: #4C0033;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    }
