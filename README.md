@@ -18,7 +18,7 @@ The files have the following contents -
 - The questions for the quiz have been stored as objects in an array.
 - The `startQuiz` function starts the question counter and calls the `displayQuestions` function which displays the first question
 - Event listeners have been added to the buttons 
-- `setInterval` and `clearInterval` methods have been used to execute the `coubtdown` function
+- `setInterval` and `clearInterval` methods have been used to execute the `countdown` function
 - `localStorage` has been used to store highscores and display them on the screen
 
 ## How to get a copy of this repository

@@ -53,7 +53,6 @@ let userScore = 0;
 function startQuiz() {
   quiz_box.classList.add("activeQuiz"); //show quiz box
   displayQuestions(0); //calling showQestions function
-  questionCounter(1); //passing 1 parameter to question counter
   countdown(); //calling countdown function
 };
 
@@ -67,7 +66,6 @@ function nextQuestion() {
     questionCount++; //increment the question count value
     questionNumber++; //increment the question number value
     displayQuestions(questionCount);
-    questionCounter(questionNumber);
     nextBtn.classList.remove("show"); //hide the next button
   } else {
     showResult(); //calling showResult function
@@ -80,7 +78,8 @@ function displayQuestions(index) {
   var questionText = document.querySelector(".questionText");
   //creating a new span and div tag for question and option and passing the value using array index
   let questionTag = questions[index].question;
-  let optionTag = '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
+  let optionTag =
+    '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
     + '<div class="option"><span>' + questions[index].options[1] + '</span></div>'
     + '<div class="option"><span>' + questions[index].options[2] + '</span></div>'
     + '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
@@ -93,7 +92,6 @@ function displayQuestions(index) {
     option[i].setAttribute("onClick", "optionSelected(this)");
   }
 };
-
 
 function optionSelected(answer) {
   let userAns = answer.textContent;
@@ -126,11 +124,6 @@ function optionSelected(answer) {
 
     finishBtn.addEventListener("click", showResult);
   }
-};
-
-function questionCounter(index) {
-  //creating a new span tag and passing the question number and total question
-  let totalQuestionCountTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> Questions</span>';
 };
 
 var initialsInput = document.querySelector("#initials");
