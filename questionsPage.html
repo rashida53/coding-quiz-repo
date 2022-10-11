@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="countdownBox">
+        <h2 id="countdown"></h2>
+    </div>
+    <button id="view-scores"><a href="./highscores.html">View Highscores</a></button>
+    <button class="startBtn">Start Quiz</button>
+
+    <div class="quiz_box" id="quiz_box">
+        <!-- <header>
+                <div class="title">Awesome Quiz Application</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header> -->
+        <section>
+            <div class="questionText">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="optionList">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="nextBtn">Next Question</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <!-- <div class="complete_text">You've completed the Quiz!</div> -->
+        <div class="scoreText">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <!-- <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div> -->
+        <div>
+            <form action="">
+                <label for="initials">Enter Initials: </label>
+                <input type="text" name="initials" id="initials">
+                <br></br>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <!-- <div class="scoreBoard">
+                <ul id="scoreBoardText">High Scores</ul>
+            </div> -->
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
