@@ -194,7 +194,7 @@ function countdown() {
       timeLeft--;
     } else {
       timerEl.textContent = '';
-      if (timeLeft === 0 && questionCount + 1 < questions.length) {
+      if (timeLeft === 0 && questionCount < questions.length) {
         var h2 = document.createElement('h2');
         h2.classList.add("timeUpMsg");
         h2.textContent = "Sorry, Your time is up!";
